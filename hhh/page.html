@@ -1,0 +1,105 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SinglePageApplication</title>
+    <style>
+        div{
+            display: none;
+        }
+    </style>
+    <script>
+        function showPage(page){
+            document.querySelectorAll('div').forEach(div => {
+                div.style.display = 'none';
+            });
+            document.querySelector(`#${page}`).style.display = 'block';
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('button').forEach(button => {
+                button.onclick = function(){
+                    showPage(this.dataset.page);
+                }
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <button data-page="page1">page 1</button>
+    <button data-page="page2">page 2</button>
+    <button data-page="page3">page 3</button>
+    
+    <div id="page1">
+        <h1> this is page 1</h1>
+    </div>
+    <div id="page2">
+        <h1> this is page 2</h1>
+    </div>
+    <div id="page3">
+        <h1> this is page 3</h1>
+    </div>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: none;
+        }
+    </style>
+    <script>
+        function showPage(page){
+            document.querySelectorAll('div').forEach(div =>{
+                div.style.display = 'none';
+            })
+            document.querySelector(`#${page}`).style.display = 'block';
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll('button').forEach(button => {
+                button.onclick = function(){
+                    showPage(this.dataset.page);
+                }
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <button data-page="page1"> page1</button>
+    <button data-page="page2"> page2</button>
+    <button data-page="page3"> page3 </button>
+    <button data-page="page4"> page4</button>
+    <button data-page="page5"> page5</button>
+    <button data-page="page6"> page6 </button>
+    <button type="submit">submit</button>
+    <div id="page1">
+        <h1> this is page 1</h1>
+    </div>
+    <div id="page2">
+        <h1> this is page 2</h1>
+    </div>
+    <div id="page3">
+        <h1>lorem200
+        </h1>
+    </div>
+    <div id="page4">
+        <h1> this is page 4</h1>
+    </div>
+    <div id="page5">
+        <h1> this is page 5</h1>
+    </div>
+    <div id="page6">
+        <h1> this is page 6 </h1>
+    </div>
+</body>
+</html>
